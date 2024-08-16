@@ -1,10 +1,19 @@
 from nonebot import on_command
 from nonebot.adapters.onebot.v11 import Bot, Event
 from nonebot.typing import T_State
-import random
+from nonebot.plugin import get_plugin_config
 
-# 自定义的禁言时间列表（单位：分钟）
-mute_times = [1, 5, 10, 30]
+from loguru import logger
+import random
+from pydantic import BaseModel, Field
+
+# 定义插件所需的配置
+class PluginConfig(BaseModel):
+    mute_times: list[int] = Field(default=[1, 5, 10, 30])
+
+plugin_config = get_plugin_config(PluginConfig)
+mute_times = plugin_config.mute_times
+logger.info(f"禁言时间配置:{mute_times}")
 
 mute = on_command(
     "禁我", 
@@ -31,7 +40,7 @@ async def handle_mute_request(bot: Bot, event: Event, state: T_State):
     # 检查发送消息者的角色
     try:
         sender_info = await bot.get_group_member_info(group_id=group_id, user_id=user_id)
-        if sender_info["role"] == "owner":
+        if sender_info["role"] in ["admin", "owner"]:
             await mute.send("呀呀呀，似乎禁言不了呢……")
             return
     except Exception:
