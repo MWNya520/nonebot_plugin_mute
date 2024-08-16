@@ -1,20 +1,20 @@
 <div align="center">
   <a href="https://v2.nonebot.dev/store"><img src="https://github.com/A-kirami/nonebot-plugin-template/blob/resources/nbp_logo.png" width="180" height="180" alt="NoneBotPluginLogo"></a>
   <br>
-  <p><img src="https://github.com/A-kirami/nonebot-plugin-template/blob/resources/NoneBotPlugin.svg" width="240" alt="nonebot_plugin_muteme"></p>
+  <p><img src="https://github.com/A-kirami/nonebot-plugin-template/blob/resources/NoneBotPlugin.svg" width="240" alt="nonebot_plugin_mute"></p>
 </div>
 
 <div align="center">
 
-# nonebot_plugin_muteme
+# nonebot_plugin_mute
 
 _✨ 唔唔？你想被禁言嘛~？ ✨_
 
 <a href="./LICENSE">
-    <img src="https://img.shields.io/github/license/shengwang52005/nonebot_plugin_muteme.svg" alt="license">
+    <img src="https://img.shields.io/github/license/shengwang52005/nonebot_plugin_mute.svg" alt="license">
 </a>
-<a href="https://pypi.python.org/pypi/nonebot_plugin_muteme">
-    <img src="https://img.shields.io/pypi/v/nonebot_plugin_muteme.svg" alt="pypi">
+<a href="https://pypi.python.org/pypi/nonebot_plugin_mute">
+    <img src="https://img.shields.io/pypi/v/nonebot_plugin_mute.svg" alt="pypi">
 </a>
 <img src="https://img.shields.io/badge/python-3.9+-blue.svg" alt="python">
 
@@ -28,7 +28,7 @@ _✨ 唔唔？你想被禁言嘛~？ ✨_
 <summary>使用 nb-cli 安装</summary>
 在 nonebot2 项目的根目录下打开命令行, 输入以下指令即可安装
 
-    nb plugin install nonebot_plugin_muteme
+    nb plugin install nonebot_plugin_mute
 
 </details>
 
@@ -39,28 +39,28 @@ _✨ 唔唔？你想被禁言嘛~？ ✨_
 <details>
 <summary>pip</summary>
 
-    pip install nonebot_plugin_muteme
+    pip install nonebot_plugin_mute
 </details>
 
 <details>
 <summary>pdm</summary>
 
-    pdm add nonebot_plugin_muteme
+    pdm add nonebot_plugin_mute
 </details>
 <details>
 <summary>poetry</summary>
 
-    poetry nonebot_plugin_muteme
+    poetry nonebot_plugin_mute
 </details>
 <details>
 <summary>conda</summary>
 
-    conda install nonebot_plugin_muteme
+    conda install nonebot_plugin_mute
 </details>
 
 打开 nonebot2 项目根目录下的 `pyproject.toml` 文件, 在 `[tool.nonebot]` 部分追加写入
 
-    plugins = ["nonebot_plugin_muteme"]
+    plugins = ["nonebot_plugin_mute"]
 
 </details>
 
@@ -78,4 +78,4 @@ _✨ 唔唔？你想被禁言嘛~？ ✨_
 |:-----:|:----:|:----:|:----:|:----:|
 | 禁我 | 群员 | 否 | 群聊 | 在mute_times中随机抽取一个时间进行禁言 |
 ### 效果图
-![muteme](O:\dev\Github\maibot\nonebot-dev\DLXBOT-dev\plugins\dev\nonebot_plugin_muteme\resources\muteme.png)
+![mute](.\resources\mute.png)

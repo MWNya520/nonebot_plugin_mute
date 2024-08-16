@@ -1,12 +1,12 @@
 [tool.poetry]
-name = "nonebot_plugin_muteme"
+name = "nonebot_plugin_mute"
 version = "0.1.0"
 description = "唔唔？你想被禁言嘛~？"
 authors = ["Miaowing <shengwang52005@163.com>"]
 license = "MIT"
 readme = "README.md"
-homepage = "https://github.com/shengwang52005/nonebot_plugin_muteme"
-repository = "https://github.com/shengwang52005/nonebot_plugin_muteme"
+homepage = "https://github.com/shengwang52005/nonebot_plugin_mute"
+repository = "https://github.com/shengwang52005/nonebot_plugin_mute"
 
 [tool.poetry.dependencies]
 python = "^3.10"
