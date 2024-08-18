@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "nonebot_plugin_mute"
-version = "0.2.1"
+version = "0.2.2"
 description = "唔唔？你想被禁言嘛~？"
 authors = ["Miaowing <shengwang52005@163.com>"]
 license = "MIT"
