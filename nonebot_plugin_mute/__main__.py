@@ -6,9 +6,9 @@ from loguru import logger
 import random
 
 from nonebot.plugin import get_plugin_config
-from .config import config
+from .config import Config
 
-plugin_config = get_plugin_config(config)
+plugin_config = get_plugin_config(Config)
 mute_times = plugin_config.MUTE_TIMES
 logger.info(f"禁言时间配置:{mute_times}")
 
