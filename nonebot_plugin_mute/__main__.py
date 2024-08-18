@@ -9,7 +9,7 @@ from nonebot.plugin import get_plugin_config
 from .config import Config
 
 plugin_config = get_plugin_config(Config)
-mute_times = plugin_config.MUTE_TIMES
+mute_times = plugin_config.mute_times
 logger.info(f"禁言时间配置:{mute_times}")
 
 mute = on_command(
